@@ -1,0 +1,128 @@
+body {
+	margin: 0 auto;		
+}
+.resume-container {
+	font-family: sans-serif;
+}	
+.resume-row-intro  {
+	position: relative;
+	margin-bottom: 100px;
+	padding: 50px;
+	background: #187f62;
+}	
+.intro-section{
+	color: #fff;
+	display: flex;
+}	
+.left-intro-content, .right-intro-content {
+	flex: 50%;
+}	
+.right-intro-content {
+	text-align: right;
+	font-size: 15px;
+}	
+.self-mail {
+	text-decoration: none;
+	color: #fff;
+}
+.self-mail:focus, .self-mail:hover, .self-mail:active {
+	text-decoration: none;
+	color: #fff;
+}	
+.image-section {
+	position: absolute;
+	left: 50%;
+	top: 60px;
+	transform: translate(-50%, 0px);
+}	
+.image-section img {
+	border-radius: 50%;
+	box-shadow: 0 0 30px 6px #ccc;
+}
+.image-section img:hover {
+	transform: scale(1.025);
+}
+.fa-user-circle, .fa-mobile, .fa-envelope, .fa-tag {
+	margin-right: 15px;
+	width: 16px;
+}	
+.resume-row {
+	display: flex;
+	margin-bottom: 40px;
+}	
+.experience, .education, .career-highlights, .certifications, .skills, .interests {
+	flex: 50%;
+	padding: 0 20px 10px 20px;
+}
+.experience, .career-highlights, .skills {
+	text-align: right;
+	border-right: 5px solid #187f62;
+}
+.education, .certifications, .interests {
+	text-align: left;
+}	
+.resume-row .resume-subheading{
+	margin-top: 0;
+	color: #187f62;
+}
+.resume-subheading i:hover {
+	transform: scale(1.5);
+}
+.content-list {
+	list-style: none;
+	padding: 0;
+	margin: 16px 0;
+}
+.content-list li {
+	padding: 10px 0;
+}
+.year,.title {
+	display: block;
+	margin: 0;
+}
+.year {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.fa-tasks, .fa-briefcase, .fa-graduation-cap, .fa-award, .fa-cog, .fa-file-certificate {
+	color: #187f62;
+	margin-left: 15px;
+}	
+@media only screen and (max-width: 767px) {	
+	.resume-row-intro  {
+		margin-bottom: 180px;
+		padding: 40px;
+	}
+	.intro-section {
+		font-size: 14px;
+		flex-direction: column;
+	}	
+	.left-inro-content, .right-inro-content {
+		flex: 100%
+	}	
+	.left-intro-content p, .right-intro-content p {
+		margin-top: 0;
+	}	
+	.right-intro-content {
+		text-align: left;
+	}
+	.image-section {
+		top: 190px;
+	}
+	.resume-row {
+		flex-direction: column;
+		margin-bottom: 0;
+	}	
+	.experience, .education, .career-highlights, .certifications, .skills, .interests {
+		flex: 100%;
+		text-align: center;
+		border-bottom: 5px solid #187f62;
+		margin-top: 26px;
+	}
+	.interests {
+		border-bottom : none;
+	}	
+	.experience, .career-highlights, .skills {
+		border-right: none;
+	}
+}	
