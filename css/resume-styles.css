@@ -50,7 +50,7 @@ body {
 	display: flex;
 	margin-bottom: 40px;
 }	
-.experience, .education, .career-highlights, .certifications, .skills, .interests {
+.experience, .education, .career-highlights, .work-done, .skills, .interests {
 	flex: 50%;
 	padding: 0 20px 10px 20px;
 }
@@ -58,7 +58,7 @@ body {
 	text-align: right;
 	border-right: 5px solid #187f62;
 }
-.education, .certifications, .interests {
+.education, .work-done, .interests {
 	text-align: left;
 }	
 .resume-row .resume-subheading{
@@ -84,9 +84,17 @@ body {
 	font-weight: bold;
 	margin-bottom: 5px;
 }
-.fa-tasks, .fa-briefcase, .fa-graduation-cap, .fa-award, .fa-cog, .fa-file-certificate {
+.fa-tasks, .fa-briefcase, .fa-graduation-cap, .fa-award, .fa-cog, .fa-project-diagram {
 	color: #187f62;
 	margin-left: 15px;
+}
+.work-link {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+.work-link:hover {
+	border-bottom: 2px dashed;
 }	
 @media only screen and (max-width: 767px) {	
 	.resume-row-intro  {
@@ -113,7 +121,7 @@ body {
 		flex-direction: column;
 		margin-bottom: 0;
 	}	
-	.experience, .education, .career-highlights, .certifications, .skills, .interests {
+	.experience, .education, .career-highlights, .work-done, .skills, .interests {
 		flex: 100%;
 		text-align: center;
 		border-bottom: 5px solid #187f62;
